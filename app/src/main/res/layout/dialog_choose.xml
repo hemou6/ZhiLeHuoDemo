@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingVertical="5dp"
+    android:paddingHorizontal="10dp"
+    android:background="@drawable/shape_dialog_background"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/title"
+        android:text="标题"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:paddingHorizontal="10dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:text="正文"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:background="@color/color_E5E5E5"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:paddingHorizontal="20dp"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:paddingVertical="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/cancel"
+            android:text="取消"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_FF353D"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/sure"
+            android:text="确认"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/color_28A3FF"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

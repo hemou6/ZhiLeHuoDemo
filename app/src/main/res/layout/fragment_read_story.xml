@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_story"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maomao"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_loudness"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_loudness"
+        android:background="@drawable/shape_circle_background"
+        app:layout_constraintBottom_toBottomOf="@id/iv_story"
+        app:layout_constraintStart_toStartOf="@id/iv_story"/>
+
+    <com.example.zhilehuodemo.View.VerticalSeekBar
+        android:id="@+id/loud_seekBar"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        android:max="100"
+        android:progressDrawable="@drawable/layer_read_page_progress"
+        android:thumb="@null"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/iv_story"
+        app:layout_constraintTop_toTopOf="@id/iv_story"
+        app:layout_constraintBottom_toTopOf="@id/iv_loudness"/>
+
+    <ImageView
+        android:id="@+id/iv_state"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_pause"
+        android:background="@drawable/shape_circle_background"
+        app:layout_constraintBottom_toBottomOf="@id/iv_story"
+        app:layout_constraintEnd_toEndOf="@id/iv_story"/>
+
+    <ImageView
+        android:id="@+id/iv_replay"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_replay"
+        android:background="@drawable/shape_circle_background"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_story"
+        app:layout_constraintEnd_toStartOf="@id/iv_state"/>
+
+    <TextView
+        android:id="@+id/story_content"
+        android:text="按钮的点击事件中，我们通过getVisibility()方法来判断ProgressBar是否可见，如果可见就将ProgressBar隐藏掉，如果不可见就将ProgressBar显示出来。重新运行程序，然后不断地点击按钮，你就会看到进度条在显示与隐"
+        android:textSize="20sp"
+        android:lineSpacingExtra="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:letterSpacing="0.6"
+        app:layout_constraintTop_toBottomOf="@+id/iv_story"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/finger"
+        android:src="@drawable/ic_finger"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

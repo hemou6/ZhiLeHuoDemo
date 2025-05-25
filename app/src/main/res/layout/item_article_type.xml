@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:background="@color/white"
+    android:orientation="horizontal">
+    <View
+        android:id="@+id/is_select"
+        android:background="@color/color_28A3FF"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/iv_flag"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/type"
+        android:text="精选阅读"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
